@@ -1,0 +1,17 @@
+.navbar--container{
+    .navbar--list-container{
+        display: flex;
+        list-style: none;
+        li{
+            margin-right:2.5%;
+            a{
+                text-decoration: none;
+                color:black;
+                &:hover{
+                    color:red;
+                }
+            }
+        }
+    }
+
+}
