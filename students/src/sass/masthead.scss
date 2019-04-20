@@ -1,0 +1,11 @@
+.masthead--container{
+    display:flex;
+    background-color:#f5f5f5;
+    justify-content: center;
+    .masthead--label{
+        font-weight:500;
+        font-size:1.5rem;
+        color:#333;
+        padding-bottom:.75%;
+    }
+}

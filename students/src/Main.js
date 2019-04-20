@@ -1,21 +1,26 @@
 import React, { Component } from 'react';
+import './sass/base.scss';
+
 
 import{
     Route,
-    NavLink,
     HashRouter
 } from 'react-router-dom';
-
+//globals
 import Navbar from './components/Navbar';
 import Masthead from './components/Masthead';
 import Footer from './components/Footer';
-
+//pages
 import Home from './pages/Home';
 import Contact from './pages/Contact';
 import Mindfulness from './pages/Mindfulness';
 import Tutoring from './pages/Tutoring';
 import About from './pages/About';
 import Games from './pages/Games';
+// Functions
+// import Welcome from './components/functions/Welcome';
+// import Clock from './components/functions/Clock';
+
 
 
 class Main extends Component {
@@ -23,9 +28,11 @@ class Main extends Component {
         return (
             <div>
                 <Navbar/>
-                <Masthead/>
+                {/* <Welcome name="Student!"/>  */}
 
+                <Masthead pathName='doot'/>
                 <HashRouter>
+
                 <div className='content'> {/* can this be done in a component? */}
                         <Route exact path='/' component={Home}/>
                         <Route exact path='/mindfulness' component={Mindfulness}/>
@@ -36,10 +43,13 @@ class Main extends Component {
                 </div>
                 </HashRouter>
 
+                {/* <Clock/> */}
+
                 <Footer/>
             </div>
         );
     }
 }
+
 
 export default Main;

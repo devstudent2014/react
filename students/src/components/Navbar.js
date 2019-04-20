@@ -2,27 +2,17 @@ import React, { Component } from 'react';
 import '../sass/navbar.scss';
 
 import{
-    Route,
     NavLink,
     HashRouter
 } from 'react-router-dom';
-
-import Home from '../pages/Home';
-import Contact from '../pages/Contact';
-import Mindfulness from '../pages/Mindfulness';
-import Tutoring from '../pages/Tutoring';
-import About from '../pages/About';
-import Games from '../pages/Games';
-
-
-
 
 class Navbar extends Component {
     render() {
         return (
             <HashRouter>
-                <div>
-                    <div className="navbar--container">
+                <div className="navbar--container">
+                    <div className="navbar--items-container">
+                        <h1 className='navbar--headline'>Mindful Maths</h1>
                         <ul className='navbar--list-container'>
                             <li><NavLink to="/">Home</NavLink></li>
                             <li><NavLink to="/mindfulness">Mindfulness</NavLink></li>
